@@ -1,0 +1,19 @@
+2025-03-10 08:25:10.167083-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP [*]* FROM USUARIOS"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, MATERIALIZED, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, AGGREGATE, SYNONYM"; SQL statement:
+DROP * FROM USUARIOS [42001-232]
+2025-03-10 08:25:14.476315-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP [*]USUARIOS * FROM USUARIOS"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, MATERIALIZED, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, AGGREGATE, SYNONYM"; SQL statement:
+DROP USUARIOS * FROM USUARIOS [42001-232]
+2025-03-10 08:25:40.524681-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT USUARIOS * [*]FROM USUARIOS"; SQL statement:
+SELECT USUARIOS * FROM USUARIOS [42000-232]
+2025-03-13 21:55:05.492306-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CONSULTAS ESPECIALIDADE [*]USUARIO_ID"; SQL statement:
+SELECT * FROM CONSULTAS ESPECIALIDADE USUARIO_ID [42000-232]
+2025-03-21 20:22:21.140092-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete [*]* from usuarios"; expected "identifier"; SQL statement:
+delete * from usuarios [42001-232]
+2025-03-21 20:23:34.159673-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMAIL" not found; SQL statement:
+delete email, senha from usuarios 
+where email = "carlos.silva@clinica.com" and senha = "senha123" [42102-232]
